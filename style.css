@@ -9,12 +9,11 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(#cf2425, #da6062 50%, #da6062 60%, #da3b3f);
 }
 
-header,
 footer {
   height: 100px;
-  background-color: #cf2425;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -27,10 +26,10 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #da6062;
 }
 
 header {
+  height: 100px;
   height: 100px;
   display: flex;
   align-items: center;
@@ -68,11 +67,12 @@ main {
   font-size: 2.5rem;
   width: 240px;
   transform: translateX(-100%);
-  text-align: end;
+  text-align: start;
 }
 
 .content-image {
   height: 85vh;
+  z-index: 1;
 }
 
 footer {
@@ -91,23 +91,23 @@ footer div {
 }
 
 @media (max-width: 768px) {
-    header {
-        padding-left: 25px;
-    }
+  header {
+    padding-left: 25px;
+  }
 
-    .content-text {
-        transform: translateX(0%);
-        top: 80px;
-        font-size: 1rem;
-        width: 100px;
-        text-align: center;
-    }
+  .content-text {
+    transform: translateX(0%);
+    top: 80px;
+    font-size: 1rem;
+    width: 100px;
+    text-align: center;
+  }
 
-    .content-image {
-        height: 70vh;
-    }
+  .content-image {
+    height: 70vh;
+  }
 
-    footer {
-        padding: 0px 25px;
-    }
+  footer {
+    padding: 0px 25px;
+  }
 }
