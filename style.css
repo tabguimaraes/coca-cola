@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 * {
   padding: 0;
   margin: 0;
@@ -40,6 +44,10 @@ header {
 
 header span {
   font-weight: 600;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 main {
@@ -47,6 +55,13 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+h2{
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .background-logo {
@@ -83,6 +98,7 @@ footer {
   padding-left: 75px;
   color: #ffffff;
   font-weight: 100;
+  font-family: "Noto Sans", sans-serif;
 }
 
 footer div {
