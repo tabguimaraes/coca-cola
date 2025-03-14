@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   padding: 0;
@@ -13,10 +12,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background: #FFA437;
-
-
-
+  background: #ffa437;
 }
 
 footer {
@@ -29,13 +25,14 @@ footer {
 }
 
 main {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
+  margin: auto;
+  display: grid;
+  grid-template-columns: min-content;
+  grid-template-areas: "texto logo";
   align-items: center;
 }
 
-header{
+header {
   height: 100px;
   height: 100px;
   display: flex;
@@ -45,9 +42,8 @@ header{
   padding-left: 75px;
 }
 
-
-
-header span, header a {
+header span,
+header a {
   font-weight: 600;
   font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
@@ -57,14 +53,11 @@ header span, header a {
   color: inherit;
 }
 
-main {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+a {
+  padding: 20px;
 }
 
-h2{
+h2 {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -84,16 +77,16 @@ h2{
 }
 
 .content-text {
-  position: absolute;
   color: #ffffff;
   font-size: 2.5rem;
   width: 240px;
-  transform: translateX(-100%);
-  text-align: start;
+  text-align: end;
+  grid-area: texto;
 }
 
 .content-image {
   height: 85vh;
+  grid-area: logo;
 }
 
 footer {

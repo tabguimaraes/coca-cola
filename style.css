@@ -42,8 +42,6 @@ header{
   padding-left: 75px;
 }
 
-
-
 header span, header a {
   font-weight: 600;
   font-family: "Noto Sans", sans-serif;
@@ -52,6 +50,10 @@ header span, header a {
   font-variation-settings: "wdth" 100;
   text-decoration: none;
   color: inherit;
+}
+
+a{
+  padding: 20px;
 }
 
 main {
