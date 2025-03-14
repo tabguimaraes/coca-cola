@@ -13,7 +13,10 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(#cf2425, #da6062d7 50%, #da6062 60%, #da3b3f);
+  background: #FFA437;
+
+
+
 }
 
 footer {
