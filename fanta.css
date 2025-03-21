@@ -110,15 +110,24 @@ footer div {
     padding-left: 25px;
   }
 
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "texto" 
+    "logo";
+  }
+
   .content-text {
-    transform: translateX(0%);
-    top: 80px;
-    font-size: 1rem;
-    width: 100px;
+    place-self: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 300px;
     text-align: center;
   }
 
   .content-image {
+    place-self: center;
     height: 70vh;
   }
 
